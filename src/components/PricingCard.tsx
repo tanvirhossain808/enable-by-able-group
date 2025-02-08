@@ -1,9 +1,12 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// const myVar: any = { name: "John", age: 30 };
+
 import React from "react";
 import Tick from "./common/Tick";
 // Assuming you have a Tick component
 // Assuming you have a Link component
 
-const PricingCard = ({ plan }) => {
+const PricingCard = ({ plan }: { plan: any }) => {
   const isPriceObject = typeof plan.price === "object";
   const monthlyPrice = isPriceObject ? plan.price.monthly : plan.price;
   const originalPrice =
@@ -24,7 +27,7 @@ const PricingCard = ({ plan }) => {
       </div>
 
       <ul className="grid mt-8 text-left gap-y-4">
-        {plan.features.map((item, index) => (
+        {plan.features.map((item: any, index: any) => (
           <li key={index} className="flex items-start gap-3 text-gray-800">
             <Tick className="w-6 h-6" />
             <span>{item}</span>
