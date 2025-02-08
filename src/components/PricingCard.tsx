@@ -3,20 +3,7 @@ import Tick from "./common/Tick";
 // Assuming you have a Tick component
 // Assuming you have a Link component
 
-interface PricingCardProps {
-  plan: {
-    name: string;
-    price: string | { monthly: string; annual: string; original: string };
-    features: string[];
-    button: {
-      text: string;
-      link: string;
-    };
-    popular: boolean;
-  };
-}
-
-const PricingCard: React.FC<PricingCardProps> = ({ plan }: { plan: any }) => {
+const PricingCard = ({ plan }) => {
   const isPriceObject = typeof plan.price === "object";
   const monthlyPrice = isPriceObject ? plan.price.monthly : plan.price;
   const originalPrice =
