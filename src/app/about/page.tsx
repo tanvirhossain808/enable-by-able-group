@@ -2,18 +2,6 @@ import React from "react"; // Adjust the import for your assets if needed
 import SectionHead from "@/components/ui/SectionHead";
 import Image from "next/image";
 
-interface TeamMember {
-  name: string;
-  title: string;
-  avatar: {
-    src: string;
-    alt: string;
-  };
-}
-
-interface AboutUsProps {
-  publishedTeamMembers: TeamMember[];
-}
 const publishedTeamMembers = Array.from({ length: 3 }, (_, index) => ({
   name: `Team Member ${index + 1}`,
   title: `Position ${index + 1}`,
@@ -22,7 +10,7 @@ const publishedTeamMembers = Array.from({ length: 3 }, (_, index) => ({
     alt: `team member picture ${index + 1}`,
   },
 }));
-const AboutUs: React.FC<AboutUsProps> = () => {
+const AboutUs = () => {
   return (
     <>
       <SectionHead title={"About"} desc={"We are a small passionate team."} />

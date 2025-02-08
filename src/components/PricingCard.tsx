@@ -1,6 +1,5 @@
 import React from "react";
 import Tick from "./common/Tick";
-import Link from "next/link";
 // Assuming you have a Tick component
 // Assuming you have a Link component
 
@@ -17,7 +16,7 @@ interface PricingCardProps {
   };
 }
 
-const PricingCard: React.FC<PricingCardProps> = ({ plan }) => {
+const PricingCard: React.FC<PricingCardProps> = ({ plan }: { plan: any }) => {
   const isPriceObject = typeof plan.price === "object";
   const monthlyPrice = isPriceObject ? plan.price.monthly : plan.price;
   const originalPrice =
