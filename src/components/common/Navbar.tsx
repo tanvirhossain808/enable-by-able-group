@@ -39,7 +39,7 @@ import Link from "next/link";
 const navbarData = [
   { name: "Activities", route: "/activities" },
   { name: "Volunteers", route: "/volunteers" },
-  { name: "Pricing", route: "/pricing" },
+  // { name: "Pricing", route: "/pricing" },
   { name: "About", route: "/about" },
   { name: "Blog", route: "/blog" },
   { name: "Contact", route: "/contact" },
@@ -47,17 +47,13 @@ const navbarData = [
 const Navbar: React.FC = () => {
   return (
     <header className="flex flex-col lg:flex-row justify-between items-center my-5">
-      {/* <Astronav> */}
       <div className="flex w-full lg:w-auto items-center justify-between">
         <Link href="/" className="text-lg">
           <span className="font-bold text-slate-800">Hope</span>
           <span className="text-slate-500">Rise</span>
         </Link>
-        <div className="block lg:hidden">
-          {/* <MenuIcon className="w-4 h-4 text-gray-800" /> */}
-        </div>
+        <div className="block lg:hidden"></div>
       </div>
-      {/* <MenuItems className="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0"> */}
       <div className="flex items-center gap-4">
         {navbarData.map((data, index) => (
           <Link href={data.route} key={index}>
@@ -69,8 +65,6 @@ const Navbar: React.FC = () => {
         <Link href="#">Log in</Link>
         <Link href="#">Sign up</Link>
       </div>
-      {/* </MenuItems> */}
-      {/* </Astronav> */}
       <div>
         <div className="hidden lg:flex items-center gap-4">
           <a href="#">Log in</a>
