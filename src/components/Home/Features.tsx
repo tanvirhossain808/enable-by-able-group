@@ -10,39 +10,39 @@ import {
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "lorem ipsum dolor sit amet",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aut.",
     icon: <FaBriefcase />,
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "lorem ipsum dolor sit amet",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aut.",
     icon: <FaWindowMaximize />,
   },
   {
-    title: "On-Demand Components",
+    title: "lorem ipsum dolor sit amet",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aut.",
     icon: <FaDatabase />,
   },
   {
-    title: "Broad Integration",
+    title: "lorem ipsum dolor sit amet",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aut.",
     icon: <FaRobot />,
   },
   {
-    title: "SEO Enabled",
+    title: "lorem ipsum dolor sit amet",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aut.",
     icon: <FaSearch />,
   },
   {
-    title: "Community",
+    title: "lorem ipsum dolor sit amet",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aut.s",
     icon: <FaUser />,
   },
 ];
@@ -52,11 +52,12 @@ const Features: FC = () => {
     <div>
       <div className="mt-16 md:mt-0">
         <h2 className="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-          Everything you need to start a website
+          Lorem ipsum dolor sit amet.
         </h2>
         <p className="text-lg mt-4 text-slate-600">
-          Astro comes batteries included. It takes the best parts of
-          state-of-the-art tools and adds its own innovations.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+          voluptatem assumenda a numquam amet ipsum deserunt dignissimos quidem
+          temporibus necessitatibus?
         </p>
       </div>
 

@@ -36,48 +36,35 @@ import Link from "next/link";
 //     path: "https://astroship-pro.web3templates.com/",
 //   },
 // ];
-
+const navbarData = [
+  { name: "Activities", route: "/activities" },
+  { name: "Volunteers", route: "/volunteers" },
+  { name: "Pricing", route: "/pricing" },
+  { name: "About", route: "/about" },
+  { name: "Blog", route: "/blog" },
+  { name: "Contact", route: "/contact" },
+];
 const Navbar: React.FC = () => {
   return (
     <header className="flex flex-col lg:flex-row justify-between items-center my-5">
       {/* <Astronav> */}
       <div className="flex w-full lg:w-auto items-center justify-between">
         <Link href="/" className="text-lg">
-          <span className="font-bold text-slate-800">Astro</span>
-          <span className="text-slate-500">ship</span>
+          <span className="font-bold text-slate-800">Hope</span>
+          <span className="text-slate-500">Rise</span>
         </Link>
         <div className="block lg:hidden">
           {/* <MenuIcon className="w-4 h-4 text-gray-800" /> */}
         </div>
       </div>
       {/* <MenuItems className="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0"> */}
-      <ul className="flex flex-col lg:flex-row lg:gap-3">
-        {/* {menuitems.map((item, index) => (
-              <React.Fragment key={index}>
-                {item.children ? (
-                  <Dropdown
-                    title={item.title}
-                    children={item.children}
-                    lastItem={index === menuitems.length - 1}
-                  />
-                ) : (
-                  <li key={item.title}>
-                    <a
-                      href={item.path}
-                      className="flex lg:px-3 py-2 items-center text-gray-600 hover:text-gray-900"
-                    >
-                      <span>{item.title}</span>
-                      {item.badge && (
-                        <span className="ml-1 px-2 py-0.5 text-[10px] animate-pulse font-semibold uppercase text-white bg-indigo-600 rounded-full">
-                          New
-                        </span>
-                      )}
-                    </a>
-                  </li>
-                )}
-              </React.Fragment>
-            ))} */}
-      </ul>
+      <div className="flex items-center gap-4">
+        {navbarData.map((data, index) => (
+          <Link href={data.route} key={index}>
+            {data.name}
+          </Link>
+        ))}
+      </div>
       <div className="lg:hidden flex items-center mt-3 gap-4">
         <Link href="#">Log in</Link>
         <Link href="#">Sign up</Link>

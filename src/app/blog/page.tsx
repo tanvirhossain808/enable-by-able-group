@@ -18,37 +18,37 @@ interface BlogPost {
 // Mock data for the blog posts
 const publishedBlogEntries: BlogPost[] = [
   {
-    title: "Blog Post 1",
+    title: "Lorem ipsum dolor sit amet",
     category: "Startup",
-    author: "Author 1",
+    author: "Lorem Ipsum",
     publishDate: new Date("2025-02-08"),
     image: {
       src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240",
-      alt: "Image 1",
+      alt: "Lorem Image 1",
     },
-    slug: "blog-post-1",
+    slug: "lorem-ipsum-dolor",
   },
   {
-    title: "Blog Post 2",
+    title: "Consectetur adipiscing elit",
     category: "Business",
-    author: "Author 2",
+    author: "Dolor Sit",
     publishDate: new Date("2025-01-25"),
     image: {
       src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240",
-      alt: "Image 2",
+      alt: "Lorem Image 2",
     },
-    slug: "blog-post-2",
+    slug: "consectetur-adipiscing-elit",
   },
   {
-    title: "Blog Post 3",
+    title: "Sed do eiusmod tempor incididunt",
     category: "Technology",
-    author: "Author 3",
+    author: "Adipiscing Elit",
     publishDate: new Date("2025-01-15"),
     image: {
       src: "https://images.unsplash.com/photo-1627163439134-7a8c47e08208?&fit=crop&w=430&h=240",
-      alt: "Image 3",
+      alt: "Lorem Image 3",
     },
-    slug: "blog-post-3",
+    slug: "sed-do-eiusmod",
   },
 ];
 

@@ -4,15 +4,15 @@ const ContactPage = () => {
       <div className="max-w-4xl w-full bg-white p-8 shadow-lg rounded-lg flex flex-col md:flex-row gap-8">
         {/* Contact Details */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-2xl font-bold mb-4">Contact Astroship</h2>
+          <h2 className="text-2xl font-bold mb-4">Contact lorem</h2>
           <p className="text-gray-600 mb-4">
-            Have something to say? We are here to help. Fill up the form or send
-            an email or call.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+            libero?
           </p>
           <div className="text-gray-700 space-y-2">
-            <p>📍 1734 Sanfrancisco, CA 93063</p>
-            <p>📧 hello@astroshipstarter.com</p>
-            <p>☎ +1 (987) 4587 899</p>
+            <p>📍 Lorem ipsum dolor sit amet consectetur.</p>
+            <p>📧 hello@lorem.com</p>
+            <p>☎ +0004004</p>
           </div>
         </div>
 

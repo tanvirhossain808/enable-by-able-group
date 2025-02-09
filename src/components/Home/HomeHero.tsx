@@ -8,7 +8,7 @@ const Hero: FC = () => {
       {/* Image Section */}
       <div className="py-6 md:order-1 hidden md:block">
         <Image
-          src="/assets/hero.png"
+          src="/home/front-view-kids-with-plastic-bag (2).jpg"
           alt="Astronaut in the air"
           width={620}
           height={0}
@@ -18,12 +18,12 @@ const Hero: FC = () => {
       {/* Content Section */}
       <div>
         <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-          Marketing website done with Astro
+          Transform Lives — Make a Difference!
         </h1>
         <p className="text-lg mt-4 text-slate-600 max-w-xl">
-          Astroship is a starter template for startups, marketing websites &
-          landing pages. Built with Astro.build and TailwindCSS. You can quickly
-          create any website with this starter.
+          Join us in creating a brighter future for those in need. Our mission
+          is to support underprivileged communities with essential resources and
+          opportunities. Together, we can bring hope and dignity to every life.
         </p>
 
         {/* Buttons Section */}
@@ -35,7 +35,7 @@ const Hero: FC = () => {
             rel="noopener noreferrer"
           >
             <FaCloudDownloadAlt className="text-white w-5 h-5" />
-            Download for Free
+            Loremlorem.
           </a>
 
           <a
@@ -45,7 +45,7 @@ const Hero: FC = () => {
             rel="noopener noreferrer"
           >
             <FaGithub className="text-black w-4 h-4" />
-            GitHub Repo
+            Loremlorem
           </a>
         </div>
       </div>
