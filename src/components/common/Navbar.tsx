@@ -40,7 +40,7 @@ const navbarData = [
   { name: "Activities", route: "/activities" },
   { name: "Volunteers", route: "/volunteers" },
   // { name: "Pricing", route: "/pricing" },
-  { name: "About", route: "/about" },
+  // { name: "About", route: "/about" },
   { name: "Blog", route: "/blog" },
   { name: "Contact", route: "/contact" },
 ];
