@@ -13,7 +13,7 @@ const publishedTeamMembers = Array.from({ length: 3 }, (_, index) => ({
 const TeamMember = () => {
   return (
     <>
-      <SectionHead title={"About"} desc={"Our Team Member"} />
+      <SectionHead title={""} desc={"Our Team Member"} />
 
       <div className="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
         <h2 className="font-bold text-3xl text-gray-800">

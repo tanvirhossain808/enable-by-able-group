@@ -1,3 +1,4 @@
+"use client";
 const ContactUs = () => {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 py-12 bg-gray-100">
@@ -17,29 +18,33 @@ const ContactUs = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="w-full md:w-1/2">
-          <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full p-3 border rounded-md focus:ring focus:ring-blue-300"
-            />
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full p-3 border rounded-md focus:ring focus:ring-blue-300"
-            />
-            <textarea
-              placeholder="Your Message"
-              className="w-full p-3 border rounded-md focus:ring focus:ring-blue-300 h-32"
-            ></textarea>
-            <button
-              type="submit"
-              className="w-full p-3 bg-black text-white rounded-md hover:bg-gray-800"
-            >
-              Send Message
-            </button>
-          </form>
+
+        <div className="map-container">
+          <iframe
+            title="Google Map"
+            className="map-iframe"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            frameBorder="0"
+            scrolling="no"
+            marginHeight={0}
+            marginWidth={0}
+            allowFullScreen
+          ></iframe>
+
+          <style jsx>{`
+            .map-container {
+              position: relative;
+              width: 100%;
+              max-width: 600px;
+              height: 400px;
+              margin: auto;
+            }
+            .map-iframe {
+              width: 100%;
+              height: 100%;
+              border: none;
+            }
+          `}</style>
         </div>
       </div>
     </div>
